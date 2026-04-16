@@ -25,17 +25,6 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Check secret is set
-        run: |
-          if [ -z "$SCRAPER_API_KEY" ]; then
-            echo "ERROR: SCRAPER_API_KEY is empty or not set"
-            exit 1
-          else
-            echo "SCRAPER_API_KEY is set (length: ${#SCRAPER_API_KEY})"
-          fi
-        env:
-          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-
       - name: Run price sweeper
         run: python price_sweeper.py
         env:
