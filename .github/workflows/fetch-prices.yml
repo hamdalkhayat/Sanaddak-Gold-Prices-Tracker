@@ -27,6 +27,8 @@ jobs:
 
       - name: Run price sweeper
         run: python price_sweeper.py
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
 
       - name: Commit updated price history
         run: |

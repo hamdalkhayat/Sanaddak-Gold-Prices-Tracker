@@ -10,29 +10,14 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+import os
+
 import requests
 from bs4 import BeautifulSoup
 
 URL = "https://ta3weem.com/en/"
 HISTORY_FILE = Path(__file__).parent / "price_history.json"
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Cache-Control": "no-cache",
-    "Pragma": "no-cache",
-    "Referer": "https://www.google.com/",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "cross-site",
-    "Sec-Fetch-User": "?1",
-}
+SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "")
 
 TARGETS = {
     "US Dollar (USD)",
@@ -43,7 +28,10 @@ TARGETS = {
 
 
 def fetch_prices() -> dict:
-    response = requests.get(URL, headers=HEADERS, timeout=30)
+    if not SCRAPER_API_KEY:
+        raise RuntimeError("SCRAPER_API_KEY environment variable is not set.")
+    proxy_url = f"http://api.scraperapi.com?api_key={SCRAPER_API_KEY}&url={URL}"
+    response = requests.get(proxy_url, timeout=60)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
