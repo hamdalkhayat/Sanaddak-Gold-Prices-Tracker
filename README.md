@@ -5,20 +5,21 @@
 
 ## Latest Prices
 
-**Fetched at:** 2026-07-16 15:06 UTC  
-**Site timestamp:** Last refreshed on Thursday 16 July 18:06. Click  
+**Fetched at:** 2026-07-17 09:01 UTC  
+**Site timestamp:** Last refreshed on Friday 17 July 12:01. Click  
 
 | Asset | Price | Unit |
 |-------|------:|------|
-| US Dollar (USD) | **50.58** | EGP / USD |
-| 21K Gold | **5,760.00** | EGP / gram |
-| 24K Gold | **6,584.74** | EGP / gram |
-| Gold Pound | **46,080** | EGP |
+| US Dollar (USD) | **50.52** | EGP / USD |
+| 21K Gold | **5,770.00** | EGP / gram |
+| 24K Gold | **6,595.00** | EGP / gram |
+| Gold Pound | **46,160** | EGP |
 
 ## Price History
 
 | Fetched At | USD/EGP | 21K Gold | 24K Gold | Gold Pound |
 |------------|--------:|---------:|---------:|-----------:|
+| 2026-07-17 09:01 UTC | 50.52 | 5,770.00 | 6,595.00 | 46,160 |
 | 2026-07-16 15:06 UTC | 50.58 | 5,760.00 | 6,584.74 | 46,080 |
 | 2026-07-16 11:44 UTC | 50.58 | 5,790.00 | 6,626.40 | 46,320 |
 | 2026-07-16 09:06 UTC | 50.58 | 5,795.00 | 6,649.61 | 46,360 |
