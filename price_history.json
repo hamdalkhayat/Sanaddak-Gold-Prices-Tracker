@@ -11082,5 +11082,27 @@
       },
       "_page_timestamp": "Last refreshed on Thursday 1 October 21:45. Click"
     }
+  },
+  {
+    "fetched_at": "2026-10-02 13:16 UTC",
+    "prices": {
+      "US Dollar (USD)": {
+        "display": "52.40",
+        "value": 52.4
+      },
+      "21K Gold": {
+        "display": "6,141.84",
+        "value": 6141.84
+      },
+      "24K Gold": {
+        "display": "7,019.25",
+        "value": 7019.25
+      },
+      "Gold Pound": {
+        "display": "49,055",
+        "value": 49055.0
+      },
+      "_page_timestamp": "Last refreshed on Friday 2 October 16:16. Click"
+    }
   }
 ]
