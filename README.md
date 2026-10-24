@@ -5,8 +5,8 @@
 
 ## Latest Prices
 
-**Fetched at:** 2026-10-24 11:40 UTC  
-**Site timestamp:** Last refreshed on Saturday 24 October 14:40. Click  
+**Fetched at:** 2026-10-24 13:54 UTC  
+**Site timestamp:** Last refreshed on Saturday 24 October 16:54. Click  
 
 | Asset | Price | Unit |
 |-------|------:|------|
@@ -19,6 +19,7 @@
 
 | Fetched At | USD/EGP | 21K Gold | 24K Gold | Gold Pound |
 |------------|--------:|---------:|---------:|-----------:|
+| 2026-10-24 13:54 UTC | 55.27 | 6,250.00 | 7,143.00 | 50,000 |
 | 2026-10-24 11:40 UTC | 55.27 | 6,250.00 | 7,143.00 | 50,000 |
 | 2026-10-23 17:48 UTC | 55.27 | 6,255.00 | 7,148.00 | 50,040 |
 | 2026-10-23 14:49 UTC | 55.27 | 6,264.87 | 7,159.85 | 50,080 |
